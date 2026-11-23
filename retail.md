@@ -23,8 +23,9 @@ Store Region > Store State > Store City > Store Name
 - When comparing stores, use same-store analysis only.
 - **Same store:** a store that has been open for at least 12 months,
   based on the `Store Open Date` field.
-- TODO: Specify the reference date for the 12-month test
-  (period start, period end, or today).
+- **Reference date:** the 12-month test is measured from **January 1, 2027**.
+  A store qualifies as same-store if its `Store Open Date` is on or before
+  January 1, 2026 (at least 12 months before the reference date).
 
 ## Table Guidance
 
