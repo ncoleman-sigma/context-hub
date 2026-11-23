@@ -1,16 +1,32 @@
-# Business Definitions
+---
+title: Business Definitions
+owner: Khush Gill
+last_reviewed: 2026-11-23
+related:
+  - data-model-guidance.md
+  - glossary.md
+---
 
-Owned by the business team.  
+# Business Definitions
 
 ## Hierarchies
 
-- When using the Product dimension the hierarchy uses: Product Type > Product Family > Product Line > Product Name
-- when using the Store dimension the hierarchy uses: Store Region > Store State > Store City > Store Name
+### Product dimension
+Product Type > Product Family > Product Line > Product Name
+
+### Store dimension
+Store Region > Store State > Store City > Store Name
 
 ## Retail Reporting
 
-- when comparing stores only same store analysis should be used.  Same stores are defined as those stores that have been opened for at least 12 months.  See the Store Open Date.  
-  
+### Store comparisons
+- When comparing stores, use same-store analysis only.
+- **Same store:** a store that has been open for at least 12 months,
+  based on the `Store Open Date` field.
+- TODO: Specify the reference date for the 12-month test
+  (period start, period end, or today).
+
 ## Table Guidance
 
-- Use Big Buys Data Model found in the Context Hub workspace 
+- Use the **Big Buys Data Model** in the Context Hub workspace.
+- https://staging.sigmacomputing.io/context-hub/data-model/Big-Buys-Data-Model-3R6ZoVIfMTCk5p0qB2dkJh
